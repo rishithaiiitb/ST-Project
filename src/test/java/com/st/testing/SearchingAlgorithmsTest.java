@@ -16,6 +16,9 @@ public class SearchingAlgorithmsTest {
 
         int[] arr2 = {36, 24, 12, 48};
         assertEquals(2, SearchingAlgorithms.linearSearch(arr2, 12));
+
+        int[] arr3 = {-9, 3, 57, 3, 10};
+        assertEquals(1, SearchingAlgorithms.linearSearch(arr3, 3));
     }
 
     @Test
