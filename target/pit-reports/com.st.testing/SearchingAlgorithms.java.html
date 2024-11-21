@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>SearchingAlgorithms.java</h1>
+
+<table class="src">
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.st.testing;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.*;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>public class SearchingAlgorithms {</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // Linear Search</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static int linearSearch(int[] arr, int key) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_9'/>
+9
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_9'>2</a>
+<span>
+1. linearSearch : negated conditional &rarr; KILLED<br/>
+2. linearSearch : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        for (int i = 0; i &#60; arr.length; i++) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_10'/>
+10
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_10'>2</a>
+<span>
+1. linearSearch : replaced int return with 0 for com/st/testing/SearchingAlgorithms::linearSearch &rarr; KILLED<br/>
+2. linearSearch : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (arr[i] == key) return i;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_12'/>
+12
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_12'>1</a>
+<span>
+1. linearSearch : replaced int return with 0 for com/st/testing/SearchingAlgorithms::linearSearch &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return -1;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // Binary Search</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static int binarySearch(int[] arr, int key) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_17'/>
+17
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_17'>1</a>
+<span>
+1. binarySearch : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        int left = 0, right = arr.length - 1;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_18'/>
+18
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_18'>2</a>
+<span>
+1. binarySearch : negated conditional &rarr; KILLED<br/>
+2. binarySearch : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        while (left &#60;= right) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_19'/>
+19
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_19'>3</a>
+<span>
+1. binarySearch : Replaced integer subtraction with addition &rarr; KILLED<br/>
+2. binarySearch : Replaced integer division with multiplication &rarr; KILLED<br/>
+3. binarySearch : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            int mid = left + (right - left) / 2;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_20'/>
+20
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_20'>2</a>
+<span>
+1. binarySearch : replaced int return with 0 for com/st/testing/SearchingAlgorithms::binarySearch &rarr; KILLED<br/>
+2. binarySearch : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (arr[mid] == key) return mid;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_21'/>
+21
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_21'>3</a>
+<span>
+1. binarySearch : changed conditional boundary &rarr; SURVIVED<br/>
+2. binarySearch : Replaced integer addition with subtraction &rarr; TIMED_OUT<br/>
+3. binarySearch : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (arr[mid] &#60; key) left = mid + 1;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_22'/>
+22
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_22'>1</a>
+<span>
+1. binarySearch : Replaced integer subtraction with addition &rarr; TIMED_OUT<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>            else right = mid - 1;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_24'/>
+24
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_24'>1</a>
+<span>
+1. binarySearch : replaced int return with 0 for com/st/testing/SearchingAlgorithms::binarySearch &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return -1;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // Hashing Search</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static boolean hashingSearch(int[] arr, int key) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        Set&#60;Integer&#62; set = new HashSet&#60;&#62;();</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        for (int num : arr) set.add(num);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_31'/>
+31
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_31'>2</a>
+<span>
+1. hashingSearch : replaced boolean return with true for com/st/testing/SearchingAlgorithms::hashingSearch &rarr; KILLED<br/>
+2. hashingSearch : replaced boolean return with false for com/st/testing/SearchingAlgorithms::hashingSearch &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return set.contains(key);</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // Tree-Based Search (Binary Search Tree)</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static boolean searchInTree(TreeNode root, int key) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_36'/>
+36
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_36'>1</a>
+<span>
+1. searchInTree : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        while (root != null) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_37'/>
+37
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_37'>2</a>
+<span>
+1. searchInTree : negated conditional &rarr; KILLED<br/>
+2. searchInTree : replaced boolean return with false for com/st/testing/SearchingAlgorithms::searchInTree &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (root.val == key) return true;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_38'/>
+38
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_38'>2</a>
+<span>
+1. searchInTree : changed conditional boundary &rarr; SURVIVED<br/>
+2. searchInTree : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            if (key &#60; root.val) root = root.left;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            else root = root.right;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_41'/>
+41
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_41'>1</a>
+<span>
+1. searchInTree : replaced boolean return with true for com/st/testing/SearchingAlgorithms::searchInTree &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return false;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static boolean treeSearch(int[] arr, int key) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_45'>1</a>
+<span>
+1. treeSearch : removed call to java/util/Arrays::sort &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        Arrays.sort(arr);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_46'/>
+46
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_46'>1</a>
+<span>
+1. treeSearch : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        TreeNode root = buildBinarySearchTree(arr, 0, arr.length - 1);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_47'/>
+47
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_47'>2</a>
+<span>
+1. treeSearch : replaced boolean return with true for com/st/testing/SearchingAlgorithms::treeSearch &rarr; KILLED<br/>
+2. treeSearch : replaced boolean return with false for com/st/testing/SearchingAlgorithms::treeSearch &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return searchInTree(root, key);</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private static TreeNode buildBinarySearchTree(int[] arr, int start, int end) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_51'/>
+51
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_51'>2</a>
+<span>
+1. buildBinarySearchTree : changed conditional boundary &rarr; SURVIVED<br/>
+2. buildBinarySearchTree : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (start &#62; end) return null;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_52'/>
+52
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_52'>3</a>
+<span>
+1. buildBinarySearchTree : Replaced integer subtraction with addition &rarr; KILLED<br/>
+2. buildBinarySearchTree : Replaced integer division with multiplication &rarr; KILLED<br/>
+3. buildBinarySearchTree : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        int mid = start + (end - start) / 2;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        TreeNode node = new TreeNode(arr[mid]);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_54'/>
+54
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_54'>1</a>
+<span>
+1. buildBinarySearchTree : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        node.left = buildBinarySearchTree(arr, start, mid - 1);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_55'/>
+55
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_55'>1</a>
+<span>
+1. buildBinarySearchTree : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        node.right = buildBinarySearchTree(arr, mid + 1, end);</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_56'/>
+56
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_56'>1</a>
+<span>
+1. buildBinarySearchTree : replaced return value with null for com/st/testing/SearchingAlgorithms::buildBinarySearchTree &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return node;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    // Fibonacci Search</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static int fibonacciSearch(int[] arr, int key) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        int n = arr.length;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_62'/>
+62
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_62'>1</a>
+<span>
+1. fibonacciSearch : Replaced integer addition with subtraction &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        int fibM2 = 0, fibM1 = 1, fibM = fibM1 + fibM2;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_64'/>
+64
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_64'>2</a>
+<span>
+1. fibonacciSearch : changed conditional boundary &rarr; SURVIVED<br/>
+2. fibonacciSearch : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        while (fibM &#60; n) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            fibM2 = fibM1;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_66'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            fibM1 = fibM;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_67'/>
+67
+</td>
+<td class='uncertain'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_67'>1</a>
+<span>
+1. fibonacciSearch : Replaced integer addition with subtraction &rarr; TIMED_OUT<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='uncertain'>            fibM = fibM1 + fibM2;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        int offset = -1;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_70'/>
+70
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_70'>2</a>
+<span>
+1. fibonacciSearch : changed conditional boundary &rarr; KILLED<br/>
+2. fibonacciSearch : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        while (fibM &#62; 1) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_71'/>
+71
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_71'>2</a>
+<span>
+1. fibonacciSearch : Replaced integer subtraction with addition &rarr; SURVIVED<br/>
+2. fibonacciSearch : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            int i = Math.min(offset + fibM2, n - 1);</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_73'/>
+73
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_73'>2</a>
+<span>
+1. fibonacciSearch : changed conditional boundary &rarr; KILLED<br/>
+2. fibonacciSearch : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (arr[i] &#60; key) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                fibM = fibM1;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                fibM1 = fibM2;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_76'/>
+76
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_76'>1</a>
+<span>
+1. fibonacciSearch : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                fibM2 = fibM - fibM1;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                offset = i;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_78'/>
+78
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_78'>2</a>
+<span>
+1. fibonacciSearch : negated conditional &rarr; KILLED<br/>
+2. fibonacciSearch : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            } else if (arr[i] &#62; key) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                fibM = fibM2;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_80'/>
+80
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_80'>1</a>
+<span>
+1. fibonacciSearch : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                fibM1 -= fibM2;</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_81'/>
+81
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_81'>1</a>
+<span>
+1. fibonacciSearch : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                fibM2 = fibM - fibM1;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            } else {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_83'/>
+83
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_83'>1</a>
+<span>
+1. fibonacciSearch : replaced int return with 0 for com/st/testing/SearchingAlgorithms::fibonacciSearch &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                return i;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_84'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>            }</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        }</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_86'/>
+86
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_86'>6</a>
+<span>
+1. fibonacciSearch : negated conditional &rarr; SURVIVED<br/>
+2. fibonacciSearch : negated conditional &rarr; SURVIVED<br/>
+3. fibonacciSearch : negated conditional &rarr; KILLED<br/>
+4. fibonacciSearch : Replaced integer addition with subtraction &rarr; KILLED<br/>
+5. fibonacciSearch : Replaced integer addition with subtraction &rarr; KILLED<br/>
+6. fibonacciSearch : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (fibM1 == 1 &#38;&#38; offset + 1 &#60; n &#38;&#38; arr[offset + 1] == key) {</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_87'/>
+87
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_87'>2</a>
+<span>
+1. fibonacciSearch : Replaced integer addition with subtraction &rarr; SURVIVED<br/>
+2. fibonacciSearch : replaced int return with 0 for com/st/testing/SearchingAlgorithms::fibonacciSearch &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>            return offset + 1;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_88'/>
+88
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_88'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_89'/>
+89
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_89'>1</a>
+<span>
+1. fibonacciSearch : replaced int return with 0 for com/st/testing/SearchingAlgorithms::fibonacciSearch &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return -1;</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_90'/>
+90
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_90'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_91'/>
+91
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_91'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>linearSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testLinearSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>linearSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testLinearSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_10'>10</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_10'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>linearSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testLinearSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced int return with 0 for com/st/testing/SearchingAlgorithms::linearSearch &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>linearSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testLinearSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_12'>12</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_12'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>linearSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testLinearSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced int return with 0 for com/st/testing/SearchingAlgorithms::linearSearch &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_17'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_18'>18</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_18'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_19'>19</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_19'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer division with multiplication &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_20'>20</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_20'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced int return with 0 for com/st/testing/SearchingAlgorithms::binarySearch &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_21'>21</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_21'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=binarySearch,-methodDesc=([II)I],-indexes=[43],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=binarySearch,-methodDesc=([II)I],-indexes=[43],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=binarySearch,-methodDesc=([II)I],-indexes=[43],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest)</li> <li>com.st.testing.SearchingAlgorithmsTest.testBinarySearchNegative(com.st.testing.SearchingAlgorithmsTest)</li> 
+</ul>
+</div></div> <p class='TIMED_OUT'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; TIMED_OUT</span>
+</div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_22'/> 
+
+<p class='TIMED_OUT'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; TIMED_OUT</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_24'>24</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_24'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>binarySearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced int return with 0 for com/st/testing/SearchingAlgorithms::binarySearch &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_31'>31</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_31'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>hashingSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testHashingSearchNegative(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced boolean return with true for com/st/testing/SearchingAlgorithms::hashingSearch &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>hashingSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testHashingSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced boolean return with false for com/st/testing/SearchingAlgorithms::hashingSearch &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_36'>36</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_36'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>searchInTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_37'>37</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_37'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>searchInTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchNegative(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>searchInTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced boolean return with false for com/st/testing/SearchingAlgorithms::searchInTree &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_38'>38</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_38'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>searchInTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>searchInTree<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=searchInTree,-methodDesc=(Lcom/st/testing/TreeNode;I)Z],-indexes=[20],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=searchInTree,-methodDesc=(Lcom/st/testing/TreeNode;I)Z],-indexes=[20],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=searchInTree,-methodDesc=(Lcom/st/testing/TreeNode;I)Z],-indexes=[20],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</li> <li>com.st.testing.SearchingAlgorithmsTest.testTreeSearchNegative(com.st.testing.SearchingAlgorithmsTest)</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_41'>41</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_41'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>searchInTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchNegative(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced boolean return with true for com/st/testing/SearchingAlgorithms::searchInTree &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>treeSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> removed call to java/util/Arrays::sort &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_46'>46</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_46'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>treeSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_47'>47</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_47'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>treeSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchNegative(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced boolean return with true for com/st/testing/SearchingAlgorithms::treeSearch &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>treeSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced boolean return with false for com/st/testing/SearchingAlgorithms::treeSearch &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_51'>51</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_51'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>buildBinarySearchTree<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=buildBinarySearchTree,-methodDesc=([III)Lcom/st/testing/TreeNode;],-indexes=[5],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=buildBinarySearchTree,-methodDesc=([III)Lcom/st/testing/TreeNode;],-indexes=[5],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=buildBinarySearchTree,-methodDesc=([III)Lcom/st/testing/TreeNode;],-indexes=[5],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</li> <li>com.st.testing.SearchingAlgorithmsTest.testTreeSearchNegative(com.st.testing.SearchingAlgorithmsTest)</li> 
+</ul>
+</div></div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>buildBinarySearchTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_52'>52</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_52'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>buildBinarySearchTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>buildBinarySearchTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer division with multiplication &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>buildBinarySearchTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_54'>54</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_54'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>buildBinarySearchTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_55'>55</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_55'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>buildBinarySearchTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_56'>56</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_56'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>buildBinarySearchTree<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced return value with null for com/st/testing/SearchingAlgorithms::buildBinarySearchTree &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_62'>62</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_62'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[16],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[16],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[16],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</li> <li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest)</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_64'>64</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_64'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[23],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[23],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[23],-mutator=org.pitest.mutationtest.engine.gregor.mutators.ConditionalsBoundaryMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</li> <li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest)</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_67'>67</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_67'/> 
+
+<p class='TIMED_OUT'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; TIMED_OUT</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_70'>70</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_70'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest)</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_71'>71</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_71'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</span>
+</div> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>none</span></span> Replaced integer subtraction with addition &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[57],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[57],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[57],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</li> <li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest)</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_73'>73</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_73'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_76'>76</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_76'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_78'>78</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_78'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_80'>80</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_80'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_81'>81</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_81'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_83'>83</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_83'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced int return with 0 for com/st/testing/SearchingAlgorithms::fibonacciSearch &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_86'>86</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_86'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> negated conditional &rarr; KILLED</span>
+</div> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</span>
+</div> <p class='SURVIVED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[137],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[137],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[137],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest)</li> 
+</ul>
+</div></div> <p class='KILLED'><span class='pop'>4.<span><b>4</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</span>
+</div> <p class='SURVIVED'><span class='pop'>5.<span><b>5</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[125],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[125],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[125],-mutator=org.pitest.mutationtest.engine.gregor.mutators.NegateConditionalsMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</li> <li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest)</li> 
+</ul>
+</div></div> <p class='KILLED'><span class='pop'>6.<span><b>6</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> changed conditional boundary &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_87'>87</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_87'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[142],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[142],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[142],-mutator=org.pitest.mutationtest.engine.gregor.mutators.MathMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest)</li> 
+</ul>
+</div></div> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>none</span></span> replaced int return with 0 for com/st/testing/SearchingAlgorithms::fibonacciSearch &rarr; SURVIVED</span>
+<a title="Click to view covering tests" class="view-covered-by-tests" onClick="document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[143],-mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator]').style.display=(document.getElementById('MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[143],-mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator]').style.display == 'block')?'none':'block';">Covering tests</a>
+<div class="covered-tests" id="MutationIdentifier-[location=Location-[clazz=com.st.testing.SearchingAlgorithms,-method=fibonacciSearch,-methodDesc=([II)I],-indexes=[143],-mutator=org.pitest.mutationtest.engine.gregor.mutators.returns.PrimitiveReturnsMutator]" style="display:none;">Covered by tests:
+<ul>
+<li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest)</li> 
+</ul>
+</div></div> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@7ed0e5db_89'>89</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@7ed0e5db_89'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibonacciSearch<br/><b>Killed by : </b>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest)</span></span> replaced int return with 0 for com/st/testing/SearchingAlgorithms::fibonacciSearch &rarr; KILLED</span>
+</div> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.st.testing.SearchingAlgorithmsTest.testTreeSearchPositive(com.st.testing.SearchingAlgorithmsTest) (0 ms)</li><li>com.st.testing.SearchingAlgorithmsTest.testTreeSearchNegative(com.st.testing.SearchingAlgorithmsTest) (0 ms)</li><li>com.st.testing.SearchingAlgorithmsTest.testBinarySearchPositive(com.st.testing.SearchingAlgorithmsTest) (0 ms)</li><li>com.st.testing.SearchingAlgorithmsTest.testBinarySearchNegative(com.st.testing.SearchingAlgorithmsTest) (0 ms)</li><li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchPositive(com.st.testing.SearchingAlgorithmsTest) (0 ms)</li><li>com.st.testing.SearchingAlgorithmsTest.testFibonacciSearchNegative(com.st.testing.SearchingAlgorithmsTest) (0 ms)</li><li>com.st.testing.SearchingAlgorithmsTest.testLinearSearchPositive(com.st.testing.SearchingAlgorithmsTest) (0 ms)</li><li>com.st.testing.SearchingAlgorithmsTest.testLinearSearchNegative(com.st.testing.SearchingAlgorithmsTest) (0 ms)</li><li>com.st.testing.SearchingAlgorithmsTest.testHashingSearchPositive(com.st.testing.SearchingAlgorithmsTest) (0 ms)</li><li>com.st.testing.SearchingAlgorithmsTest.testHashingSearchNegative(com.st.testing.SearchingAlgorithmsTest) (0 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.17.0
+
+</body>
+</html>
