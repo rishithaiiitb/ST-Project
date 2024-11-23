@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.st.testing.SortingAlgorithmsTest" time="0.055" tests="18" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.st.testing.SortingAlgorithmsTest" time="0.05" tests="18" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-17-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/himarishitha/Documents/AlgorithmsMutationTesting/target/surefire/surefirebooter-20241121214233490_3.jar /home/himarishitha/Documents/AlgorithmsMutationTesting/target/surefire 2024-11-21T21-42-33_391-jvmRun1 surefire-20241121214233490_1tmp surefire_0-20241121214233490_2tmp"/>
+    <property name="sun.java.command" value="/home/himarishitha/Documents/AlgorithmsMutationTesting/target/surefire/surefirebooter-20241123201204691_3.jar /home/himarishitha/Documents/AlgorithmsMutationTesting/target/surefire 2024-11-23T20-12-04_603-jvmRun1 surefire-20241123201204691_1tmp surefire_0-20241123201204691_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/himarishitha/Documents/AlgorithmsMutationTesting/target/test-classes:/home/himarishitha/Documents/AlgorithmsMutationTesting/target/classes:/home/himarishitha/.m2/repository/org/apache/logging/log4j/log4j-api/2.14.0/log4j-api-2.14.0.jar:/home/himarishitha/.m2/repository/org/apache/logging/log4j/log4j-core/2.14.0/log4j-core-2.14.0.jar:/home/himarishitha/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/home/himarishitha/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/himarishitha/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -27,7 +27,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/home/himarishitha/Documents/AlgorithmsMutationTesting/target/surefire/surefirebooter-20241121214233490_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/himarishitha/Documents/AlgorithmsMutationTesting/target/surefire/surefirebooter-20241123201204691_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.9+9-Ubuntu-123.04"/>
     <property name="user.name" value="himarishitha"/>
@@ -55,18 +55,18 @@
   <testcase name="testRadixSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
   <testcase name="testBucketSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
   <testcase name="testBucketSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
-  <testcase name="testHeapSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
-  <testcase name="testMergeSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.001"/>
+  <testcase name="testHeapSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.001"/>
+  <testcase name="testMergeSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
   <testcase name="testHeapSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
   <testcase name="testMergeSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
   <testcase name="testBubbleSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
   <testcase name="testBubbleSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
-  <testcase name="testCountingSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
-  <testcase name="testCountingSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.001"/>
+  <testcase name="testCountingSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.001"/>
+  <testcase name="testCountingSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
   <testcase name="testQuickSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
-  <testcase name="testSelectionSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
-  <testcase name="testInsertionSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.001"/>
-  <testcase name="testQuickSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.001"/>
-  <testcase name="testSelectionSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
+  <testcase name="testSelectionSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.001"/>
+  <testcase name="testInsertionSortPositive" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
+  <testcase name="testQuickSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
+  <testcase name="testSelectionSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.001"/>
   <testcase name="testInsertionSortNegative" classname="com.st.testing.SortingAlgorithmsTest" time="0.0"/>
 </testsuite>
