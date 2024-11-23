@@ -2,9 +2,7 @@
 
 ## Mutation Testing on Various Algorithms
 
-This project aims to outline the implementation of mutation testing, specifically focusing on evaluating and improving the effectiveness of test cases in software projects. The project applies mutation testing techniques to make small changes to the code and assesses how well the existing test cases can detect these changes. By doing this, the project aims to identify gaps in the test cases, ensuring they are strong enough to catch potential errors and improve the overall quality of the software being tested..
-
----
+This project aims to outline the implementation of mutation testing, specifically focusing on evaluating and improving the effectiveness of test cases in software projects. The project applies mutation testing techniques to make small changes to the code and assesses how well the existing test cases can detect these changes. By doing this, the project aims to identify gaps in the test cases, ensuring they are strong enough to catch potential errors and improve the overall quality of the software being tested.
 
 ## Steps to Perform Mutation Testing
 
